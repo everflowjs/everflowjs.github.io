@@ -1,2 +1,2 @@
 # everflowjs.github.io
-Website for everflow
+Website for everflow init
