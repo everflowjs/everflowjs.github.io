@@ -6,29 +6,33 @@
   <head><meta name="generator" content="Hexo 3.8.0">
     <title>API — Everflow</title>
     <meta charset="utf-8">
-    <meta name="description" content="Everflow - The Modular, and Scalable TypeScript Framework built for vue.js">
+    <meta name="description" content="The Modular, and Scalable TypeScript Framework built for vue.js">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta property="og:type" content="article">
     <meta property="og:title" content="API — Everflow">
-    <meta property="og:description" content="Everflow - The Modular, and Scalable TypeScript Framework built for vue.js">
-    <meta property="og:image" content="https://everflow.github.io/images/logo.png">
+    <meta property="og:description" content="The Modular, and Scalable TypeScript Framework built for vue.js">
+    <meta property="og:image" content="https://everflowjs.github.io//images/logo.png">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="API — Everflow">
-    <meta name="twitter:description" content="Everflow - The Modular, and Scalable TypeScript Framework built for vue.js">
-    <meta name="twitter:image" content="https://everflow.github.io/images/logo.png">
+    <meta name="twitter:description" content="The Modular, and Scalable TypeScript Framework built for vue.js">
+    <meta name="twitter:image" content="https://everflowjs.github.io/images/logo.png">
 
-    <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="96x96" href="/images/icons/icon-96x96.png">
-    <link rel="apple-touch-icon" sizes="128x128" href="/images/icons/icon-128x128.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="192x192" href="/images/icons/icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/images/icons/icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/images/icons/icon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/icon-72x72.png">
-    <meta name="msapplication-TileImage" content="/images/icons/icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+    <meta name="msapplication-TileImage" content="/images/icons/ms-icon-144x144.png">
     <link rel="icon" href="/images/logo.png" type="image/png">
 
     <meta name="msapplication-TileColor" content="#4fc08d">
@@ -43,7 +47,6 @@
 
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dosis:500&text=Everflow&display=swap" rel="stylesheet">
-
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- main page styles -->
@@ -66,7 +69,7 @@
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-1', 'everflow.github.io');
+      ga('create', 'google-ads-code', 'everflowjs.github.io');
       ga('send', 'pageview');
     </script>
   </head>
@@ -78,11 +81,11 @@
     </div>
     <header id="header">
   <a id="logo" href="/">
-    <img src="/images/logo.png" alt="Everflow logo">
+    <img src="/images/logo.png" alt="everflow logo">
     <span>Everflow</span>
   </a>
   <ul id="nav">
-    <!--<li>
+    <!-- <li>
   <form id="search-form">
     <input type="text" id="search-query-nav" class="search-query st-default-search-input" aria-label="Search">
   </form>
@@ -101,13 +104,6 @@
   </ul>
 </li>
 
-<!-- <li>
-  <a href="/v2/guide/team.html" class="nav-link team">Team</a>
-</li> -->
-<!-- <li>
-  <a href="/partners" class="nav-link ">Partners</a>
-</li> -->
-
   </ul>
 </header>
 
@@ -120,8 +116,6 @@
   <div class="sidebar-inner">
     
     <div class="list">
-      
-
       
         <h2>
           
@@ -142,9 +136,6 @@
 </div>
 
 
-
-
-
 <div class="content api with-sidebar ">
   
     
@@ -152,10 +143,11 @@
     
   
   
-    <h1>API</h1>
   
-    <h2 id="Coming-Soon"><a href="#Coming-Soon" class="headerlink" title="Coming Soon"></a>Coming Soon</h2><p>Documentation for everflow.</p>
+    <h2 id="Global-Config"><a href="#Global-Config" class="headerlink" title="Global Config"></a>Global Config</h2><p><code>evconfig.json</code> is a JSON file containing Everflow’s global configurations. You can modify its properties listed below before bootstrapping your application:</p>
+<p>more soon…</p>
 
+  
   
   <div class="footer">
     Caught a mistake or want to contribute to the documentation?
@@ -178,7 +170,7 @@
     <link rel="stylesheet" href="/css/search.css">
     <script src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
     <script>
-    /*
+      /*
     [
       '#search-query-nav',
       '#search-query-sidebar',
