@@ -1,0 +1,470 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.8.0">
+    <title>Configuration — Everflow</title>
+    <meta charset="utf-8">
+    <meta name="description" content="The Modular, and Scalable TypeScript Framework built for vue.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Configuration — Everflow">
+    <meta property="og:description" content="The Modular, and Scalable TypeScript Framework built for vue.js">
+    <meta property="og:image" content="https://everflowjs.github.io//images/logo.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Configuration — Everflow">
+    <meta name="twitter:description" content="The Modular, and Scalable TypeScript Framework built for vue.js">
+    <meta name="twitter:image" content="https://everflowjs.github.io/images/logo.png">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+    <meta name="msapplication-TileImage" content="/images/icons/ms-icon-144x144.png">
+    <link rel="icon" href="/images/logo.png" type="image/png">
+
+    <meta name="msapplication-TileColor" content="#4fc08d">
+    <meta name="theme-color" content="#4fc08d">
+
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <link rel="manifest" href="/manifest.json">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect" crossorigin="">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="">
+    <link href="https://maxcdn.bootstrapcdn.com" rel="preconnect" crossorigin="">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:500&text=Everflow&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- main page styles -->
+    <link rel="stylesheet" href="/css/page.css">
+
+    <!-- this needs to be loaded before guide's inline scripts -->
+    <script src="/js/vue.js"></script>
+
+    
+
+    <script>
+      Vue.config.productionTip = false
+      window.PAGE_TYPE = "guide"
+    </script>
+
+    <!-- ga -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'google-ads-code', 'everflowjs.github.io');
+      ga('send', 'pageview');
+    </script>
+  </head>
+
+  <body class="docs">
+    <div id="mobile-bar">
+      <a class="menu-button"></a>
+      <a class="logo" href="/"></a>
+    </div>
+    <header id="header">
+  <a id="logo" href="/">
+    <img src="/images/logo.png" alt="everflow logo">
+    <span>Everflow</span>
+  </a>
+  <ul id="nav">
+    <!-- <li>
+  <form id="search-form">
+    <input type="text" id="search-query-nav" class="search-query st-default-search-input" aria-label="Search">
+  </form>
+</li> -->
+<li class="nav-dropdown-container learn">
+  <a class="nav-link current">Learn</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><h4>Documentation</h4></li>
+    <li>
+      <ul>
+        <li><a href="/v4/guide/" class="nav-link current">Guide</a></li>
+        <li><a href="https://everflowjs.github.io/api/" target="_self">API</a></li>
+        <li><a href="/v4/style-guide/" class="nav-link">Style Guide</a></li>
+      </ul>
+    </li>
+  </ul>
+</li>
+
+  </ul>
+</header>
+
+    
+      <div id="main" class="fix-sidebar">
+        
+  
+
+<div class="sidebar">
+  <div class="sidebar-inner">
+    
+    <div class="list">
+      
+        <h2>
+          
+          Guide
+          
+            <select class="version-select">
+              <option value="SELF" selected>4.x</option>
+            </select>
+          
+        </h2>
+        <ul class="menu-root">
+  
+    
+    
+      
+        <li><h3>Essentials</h3></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    <li>
+      <a href="/v4/guide/installation.html" class="sidebar-link">Installation</a>
+    </li>
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    <li>
+      <a href="/v4/guide/index.html" class="sidebar-link">Introduction</a>
+    </li>
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    <li>
+      <a href="/v4/guide/configuration.html" class="sidebar-link current">Configuration</a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="content guide with-sidebar configuration-guide">
+  
+    
+      
+    
+  
+  
+  
+    <h1 id="Configuration-File"><a href="#Configuration-File" class="headerlink" title="Configuration File"></a>Configuration File</h1><h2 id="Configuration-Options"><a href="#Configuration-Options" class="headerlink" title="Configuration Options"></a>Configuration Options</h2><p>The configuration file is called <code>evconfig.json</code> containing Everflow’s global configurations. You can modify its properties listed below before bootstrapping your application:</p>
+<p>Placement is next to your main.ts file in your root src folder.</p>
+<h3 id="routerMode"><a href="#routerMode" class="headerlink" title="routerMode"></a>routerMode</h3><ul>
+<li><p><strong>Type:</strong> <code>RouterMode</code></p>
+</li>
+<li><p><strong>Values:</strong> <code>hash</code> | <code>history</code></p>
+</li>
+<li><p><strong>Usage:</strong></p>
+</li>
+</ul>
+<p>Tells Everflow to use hash or history routing with Vue Router</p>
+  <pre><code class="hljs json">&#123;
+  "routerMode": "hash", //or history
+&#125;</code></pre>
+<h3 id="mountId"><a href="#mountId" class="headerlink" title="mountId"></a>mountId</h3><p>Tells Everflow what HTML ID to mount the Vue Router</p>
+<ul>
+<li><p><strong>Type:</strong> <code>string</code></p>
+</li>
+<li><p><strong>default:</strong> <code>app</code></p>
+</li>
+<li><p><strong>Usage:</strong></p>
+<pre><code class="hljs json">&#123;
+  <span class="hljs-attr">"mountId"</span>: <span class="hljs-string">"app"</span>,
+&#125;</code></pre>
+</li>
+</ul>
+<h3 id="apiURL"><a href="#apiURL" class="headerlink" title="apiURL"></a>apiURL</h3><p>Tells Everflow what your API entry point is</p>
+<ul>
+<li><p><strong>Type:</strong> <code>string</code></p>
+</li>
+<li><p><strong>default:</strong> <code>https://api.localhost</code></p>
+</li>
+<li><p><strong>Usage:</strong></p>
+<pre><code class="hljs json">&#123;
+  <span class="hljs-attr">"apiURL"</span>: <span class="hljs-string">"https://api.localhost"</span>,
+&#125;</code></pre>
+</li>
+</ul>
+<h3 id="i18n"><a href="#i18n" class="headerlink" title="i18n"></a>i18n</h3><p>I18n information for your application</p>
+<ul>
+<li><p><strong>Type:</strong> <code>object</code></p>
+</li>
+<li><p><strong>Usage:</strong></p>
+<pre><code class="hljs json">&#123;
+  <span class="hljs-attr">"i18n"</span>: &#123;
+      <span class="hljs-attr">"enabled"</span>: &lt;boolean&gt;,
+      <span class="hljs-attr">"defaultLocale"</span>: <span class="hljs-string">"&lt;i18n locale&gt;"</span>,
+      <span class="hljs-attr">"fallbackLocale"</span>: <span class="hljs-string">"&lt;i18n locale&gt;"</span>,
+      <span class="hljs-attr">"modules"</span>: &lt;boolean&gt;
+  &#125;,
+&#125;</code></pre>
+</li>
+</ul>
+<h3 id="i18n-Options"><a href="#i18n-Options" class="headerlink" title="i18n / Options"></a>i18n / Options</h3><h4 id="enabled"><a href="#enabled" class="headerlink" title="enabled"></a>enabled</h4><p>Enables i18n loading in application</p>
+<ul>
+<li><p><strong>Type:</strong> <code>boolean</code></p>
+</li>
+<li><p><strong>default:</strong> <code>true</code></p>
+</li>
+<li><p><strong>Usage:</strong></p>
+<pre><code class="hljs json">&#123;
+  <span class="hljs-attr">"enabled"</span>: <span class="hljs-literal">true</span>,
+&#125;</code></pre>
+</li>
+</ul>
+<h4 id="defaultLocale"><a href="#defaultLocale" class="headerlink" title="defaultLocale"></a>defaultLocale</h4><p>The default i18n locale</p>
+<ul>
+<li><p><strong>Type:</strong> <code>string</code></p>
+</li>
+<li><p><strong>default:</strong> <code>en</code></p>
+</li>
+<li><p><strong>Usage:</strong></p>
+<pre><code class="hljs json">&#123;
+  <span class="hljs-attr">"defaultLocale"</span>: <span class="hljs-string">"en"</span>,
+&#125;</code></pre>
+</li>
+</ul>
+<h4 id="fallbackLocale"><a href="#fallbackLocale" class="headerlink" title="fallbackLocale"></a>fallbackLocale</h4><p>The fallback locale for if the default locale fails. <code>user</code> is a custom type to Everflow and will detect the users browsers language.</p>
+<ul>
+<li><p><strong>Type:</strong> <code>string</code></p>
+</li>
+<li><p><strong>default:</strong> <code>en</code></p>
+</li>
+<li><p><strong>values:</strong> <code>i18n-locale</code> | <code>user</code></p>
+</li>
+<li><p><strong>Usage:</strong></p>
+<pre><code class="hljs json">&#123;
+  <span class="hljs-attr">"fallbackLocale"</span>: <span class="hljs-string">"en"</span>,
+&#125;</code></pre>
+</li>
+</ul>
+<h4 id="modules"><a href="#modules" class="headerlink" title="modules"></a>modules</h4><p>I18n with modules enabled keeps all locales modules separated</p>
+<ul>
+<li><p><strong>Type:</strong> <code>boolean</code></p>
+</li>
+<li><p><strong>default:</strong> <code>true</code></p>
+</li>
+<li><p><strong>details:</strong> <code>true</code></p>
+</li>
+</ul>
+<p>IF <code>true</code> all translations must start with a module name unless stored in the root i18n folder.<br>$t(‘&lt;module_name&gt;.message.hello’)</p>
+<pre><code>IF `false` all translations merge and will overwrite from each module.
+$t(&apos;message.hello&apos;)
+</code></pre><ul>
+<li><p><strong>Usage:</strong></p>
+<pre><code class="hljs json">&#123;
+  <span class="hljs-attr">"modules"</span>: <span class="hljs-literal">true</span>,
+&#125;</code></pre>
+</li>
+</ul>
+<h3 id="security"><a href="#security" class="headerlink" title="security"></a>security</h3><p>Security information for your application</p>
+<ul>
+<li><p><strong>Type:</strong> <code>object</code></p>
+</li>
+<li><p><strong>Usage:</strong></p>
+<pre><code class="hljs json">&#123;
+  <span class="hljs-attr">"security"</span>: &#123;
+      <span class="hljs-attr">"key"</span>: <span class="hljs-string">"&lt;256-bit-key&gt;"</span>
+  &#125;
+&#125;</code></pre>
+</li>
+</ul>
+<h3 id="security-Options"><a href="#security-Options" class="headerlink" title="security / Options"></a>security / Options</h3><h4 id="key"><a href="#key" class="headerlink" title="key"></a>key</h4><p>A 256 bit key for AES encryption, generated if installed Everflow via Vue Cli 3</p>
+<ul>
+<li><p><strong>Type:</strong> <code>string</code></p>
+</li>
+<li><p><strong>default:</strong> <code>&lt;installation-generated&gt;</code></p>
+</li>
+<li><p><strong>Usage:</strong></p>
+<pre><code class="hljs json">&#123;
+  <span class="hljs-attr">"key"</span>: <span class="hljs-string">"&lt;256-bit-key&gt;"</span>,
+&#125;</code></pre>
+</li>
+</ul>
+<h3 id="storage"><a href="#storage" class="headerlink" title="storage"></a>storage</h3><p>Security information for your application</p>
+<ul>
+<li><p><strong>Type:</strong> <code>object</code></p>
+</li>
+<li><p><strong>Usage:</strong></p>
+<pre><code class="hljs json">&#123;
+  <span class="hljs-attr">"storage"</span>: &#123;
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"&lt;storage-name&gt;"</span>,
+      <span class="hljs-attr">"driver"</span>: [],
+      <span class="hljs-attr">"size"</span>: &lt;storage-size-in-bytes&gt;,
+      <span class="hljs-attr">"storeName"</span>: <span class="hljs-string">"&lt;storage-name&gt;"</span>
+  &#125;
+&#125;</code></pre>
+</li>
+</ul>
+<h3 id="security-Options-1"><a href="#security-Options-1" class="headerlink" title="security / Options"></a>security / Options</h3><p>TODO…</p>
+<h3 id="datetime"><a href="#datetime" class="headerlink" title="datetime"></a>datetime</h3><p>Date and time information for your application</p>
+<ul>
+<li><p><strong>Type:</strong> <code>object</code></p>
+</li>
+<li><p><strong>Usage:</strong></p>
+<pre><code class="hljs json">&#123;
+  <span class="hljs-attr">"datetime"</span>: &#123;
+      <span class="hljs-attr">"date"</span>: &#123;
+          <span class="hljs-attr">"format"</span>: <span class="hljs-string">"&lt;date_format&gt;"</span>
+      &#125;,
+      <span class="hljs-attr">"time"</span>: &#123;
+          <span class="hljs-attr">"format"</span>: <span class="hljs-string">"&lt;time_format&gt;"</span>
+      &#125;
+  &#125;
+&#125;</code></pre>
+</li>
+</ul>
+<h4 id="date"><a href="#date" class="headerlink" title="date"></a>date</h4><p>Moment.js date serialization format. Formats <a href="https://momentjscom.readthedocs.io/en/latest/moment/01-parsing/03-string-format/" target="_blank" rel="noopener">here</a></p>
+<ul>
+<li><p><strong>Type:</strong> <code>string</code></p>
+</li>
+<li><p><strong>default:</strong> <code>YYYY-MM-DD</code></p>
+</li>
+<li><p><strong>Usage:</strong></p>
+<pre><code class="hljs json">&#123;
+  <span class="hljs-attr">"format"</span>: <span class="hljs-string">"YYYY-MM-DD"</span>,
+&#125;</code></pre>
+</li>
+</ul>
+<h4 id="time"><a href="#time" class="headerlink" title="time"></a>time</h4><p>Moment.js time serialization format. Formats <a href="https://momentjscom.readthedocs.io/en/latest/moment/01-parsing/03-string-format/" target="_blank" rel="noopener">here</a></p>
+<ul>
+<li><p><strong>Type:</strong> <code>string</code></p>
+</li>
+<li><p><strong>default:</strong> <code>HH:mm:ss</code></p>
+</li>
+<li><p><strong>Usage:</strong></p>
+<pre><code class="hljs json">&#123;
+  <span class="hljs-attr">"format"</span>: <span class="hljs-string">"HH:mm:ss"</span>,
+&#125;</code></pre>
+</li>
+</ul>
+<h2 id="Example-evconfig-json"><a href="#Example-evconfig-json" class="headerlink" title="Example evconfig.json"></a>Example evconfig.json</h2><pre><code class="hljs json">&#123;
+    <span class="hljs-attr">"routerMode"</span>: <span class="hljs-string">"hash"</span>,
+    <span class="hljs-attr">"mountId"</span>: <span class="hljs-string">"app"</span>,
+    <span class="hljs-attr">"apiURL"</span>: <span class="hljs-string">"https://localhost:8080"</span>,
+    <span class="hljs-attr">"i18n"</span>: &#123;
+        <span class="hljs-attr">"enabled"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">"defaultLocale"</span>: <span class="hljs-string">"user"</span>,
+        <span class="hljs-attr">"fallbackLocale"</span>: <span class="hljs-string">"en"</span>,
+        <span class="hljs-attr">"modules"</span>: <span class="hljs-literal">true</span>
+    &#125;,
+    <span class="hljs-attr">"security"</span>: &#123;
+        <span class="hljs-attr">"key"</span>: <span class="hljs-string">"&lt;AES_KEY&gt;"</span>
+    &#125;,
+    <span class="hljs-attr">"storage"</span>: &#123;
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"everflow"</span>,
+        <span class="hljs-attr">"driver"</span>: [<span class="hljs-string">"asyncStorage"</span>],
+        <span class="hljs-attr">"size"</span>: <span class="hljs-number">4980736</span>,
+        <span class="hljs-attr">"storeName"</span>: <span class="hljs-string">"app"</span>
+    &#125;,
+    <span class="hljs-attr">"datetime"</span>: &#123;
+        <span class="hljs-attr">"date"</span>: &#123;
+            <span class="hljs-attr">"format"</span>: <span class="hljs-string">"YYYY-MM-DD"</span>
+        &#125;,
+        <span class="hljs-attr">"time"</span>: &#123;
+            <span class="hljs-attr">"format"</span>: <span class="hljs-string">"HH:mm:ss"</span>
+        &#125;
+    &#125;
+&#125;</code></pre>
+  
+  
+    <div class="guide-links">
+      
+      
+        <span>← <a href="/v4/guide/index.html">Introduction</a></span>
+      
+      
+      
+    </div>
+  
+  <div class="footer">
+    Caught a mistake or want to contribute to the documentation?
+    <a href="https://github.com/everflowjs/everflowjs.github.io/blob/master/src/v4/guide/configuration.md" rel="noopener" target="_blank">
+      Edit this on GitHub!
+    </a>
+  </div>
+</div>
+
+      </div>
+      <script src="/js/smooth-scroll.min.js"></script>
+    
+
+    <!-- main custom script for sidebars, version selects etc. -->
+    <script src="/js/css.escape.js"></script>
+    <script src="/js/common.js"></script>
+
+    <!-- search -->
+    <link href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/search.css">
+    <script src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+    <script>
+      /*
+    [
+      '#search-query-nav',
+      '#search-query-sidebar',
+      '#search-query-menu'
+    ].forEach(function (selector) {
+      if (!document.querySelector(selector)) return
+      // search index defaults to v2
+      var match = window.location.pathname.match(/^\/(v\d+)/)
+      var version = match ? match[1] : 'v2'
+      docsearch({
+      appId: '',
+      apiKey: '',
+      indexName: '',
+      inputSelector: selector,
+      algoliaOptions: { facetFilters: ["version:" + version] },
+      autocompleteOptions: { hint: false, appendTo: 'body'}
+      })
+    })
+    */
+    </script>
+  </body>
+</html>
